@@ -1,3 +1,4 @@
+import '@mantine/core/styles.css';
 import type { Metadata } from "next";
 import { MantineProvider } from '@mantine/core';
 
