@@ -1,6 +1,7 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import { Button } from '@mantine/core';
+
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         height={100}
       />
       <Button variant="filled" color="ocean-blue" size="compact-xl">
-        Entra aquí
+        Otra cosa
       </Button>
     </div>
   );
