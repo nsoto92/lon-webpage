@@ -8,3 +8,11 @@
   align-items: center;
 }
 
+.button {
+  color: white;
+}
+
+.divider {
+  margin: 8px 0px ;
+}
+
