@@ -1,10 +1,9 @@
-import Navbar from '@/components/Navbar/Navbar';
-
-export default function Home() {
+import PageLayout from '@/components/PageLayout/Page';
+import * as React from 'react';
+export default function Example() {
   return (
-    
-     <div>
-       <Navbar />
-    </div>
+    <PageLayout>
+      <h1>Hello World</h1>
+    </PageLayout>
   );
 }

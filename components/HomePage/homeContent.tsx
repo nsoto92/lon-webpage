@@ -11,7 +11,7 @@ export default function HomeContent() {
         height={100}
       />
       <Button variant="filled" color="ocean-blue" size="compact-xl">
-        Otra cosa
+        Entrar
       </Button>
     </>
   )
