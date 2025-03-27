@@ -1,5 +1,5 @@
 import Navbar from '../Navbar/Navbar';
-import { Image } from '@mantine/core';
+import { Image, px } from '@mantine/core';
 import styles from './PageLayout.module.css';
 
 export default function PageLayout({ children }: { children: React.ReactNode }) {
@@ -12,7 +12,7 @@ export default function PageLayout({ children }: { children: React.ReactNode }) 
       <div className={styles.content}>
         {children}
         <div className={styles.sideBanner}>
-          <Image src="/lvhpBanner.png" alt="LONHP" height={110} />
+         <Image src="arteCorazon.png" alt="LONHP2" height={1100}/>
         </div>
       </div>
     </div>
