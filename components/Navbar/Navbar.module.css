@@ -12,6 +12,16 @@
   color: white;
 }
 
+.label {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
 .divider {
   margin: 8px 0px ;
+}
+
+.button:hover {
+  color: red;
 }
