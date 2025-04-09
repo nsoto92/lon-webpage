@@ -1,11 +1,15 @@
+"use client"
+
 import { Button, Divider } from '@mantine/core';
 import { FaExternalLinkAlt } from "react-icons/fa";
-
+import { useIsMobile } from '../../utils/isMobile';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
+  const isMobile = useIsMobile();
   return (
-  <div className={styles.container}>
+!isMobile ?
+<div className={styles.container}>
     <Button variant="transparent" classNames={{root: styles.button, label: styles.label}}>Home</Button>
     <Divider orientation="vertical" className={styles.divider} />
     <Button variant="transparent" classNames={{root: styles.button, label: styles.label}} >Merch <FaExternalLinkAlt /></Button>
@@ -20,6 +24,8 @@ export default function Navbar() {
     <Divider orientation="vertical" className={styles.divider} />
     <Button variant="transparent" classNames={{root: styles.button, label: styles.label}}>Inframundo</Button>
   </div>
+  :
+  <div /> 
   )
 }
 

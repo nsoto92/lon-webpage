@@ -1,10 +1,10 @@
 import PageLayout from '@/components/PageLayout/PageLayout';
 import * as React from 'react';
-import FlowHotSell from '@/components/FlowHotShell/FlowHotSell';
+import FlowHotShell from '@/components/FlowHotShell/FlowHotShell';
 export default function Example() { 
   return (
     <PageLayout>
-      <FlowHotSell />
+      <FlowHotShell />
     </PageLayout>
   );
 }
