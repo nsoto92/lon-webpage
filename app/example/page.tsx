@@ -1,10 +1,10 @@
-import Navbar from '@/components/Navbar/Navbar';
-
-export default function Home() {
+import PageLayout from '@/components/PageLayout/PageLayout';
+import * as React from 'react';
+import FlowHotShell from '@/components/FlowHotShell/FlowHotShell';
+export default function Example() { 
   return (
-    
-     <div>
-       <Navbar />
-    </div>
+    <PageLayout>
+      <FlowHotShell />
+    </PageLayout>
   );
 }

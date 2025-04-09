@@ -1,6 +1,5 @@
 .container {
   display: flex;
-  width: 100%;
   color: white;
   height: 50px;
   background-color: black;
@@ -12,7 +11,27 @@
   color: white;
 }
 
+.label {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
 .divider {
   margin: 8px 0px ;
 }
 
+.button:hover {
+  color: red;
+}
+
+.control {
+  display: block;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+  border-radius: var(--mantine-radius-md);
+  font-weight: 500;
+
+  @mixin hover {
+    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+  }
+}

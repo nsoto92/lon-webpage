@@ -11,8 +11,15 @@ export default function HomeContent() {
         height={100}
       />
       <Button variant="filled" color="ocean-blue" size="compact-xl">
-        Otra cosa
+        Entrar
       </Button>
+
+      <Image
+        src="/whiteTypography4.png"
+        alt="WTG4"
+        width={200}
+        height={125}
+      />
     </>
   )
 }
