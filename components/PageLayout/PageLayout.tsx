@@ -16,6 +16,7 @@ export default function PageLayout({ children }: { children: React.ReactNode }) 
         {!isMobile &&
           <Container className={styles.sideBannerLeft}>       
             <Image fit="contain" src="/darkCombo4.png" alt="LONHP" h={210} />
+            <table>
             <tbody>
             <tr>
                 <th>En linea!</th>
@@ -24,13 +25,14 @@ export default function PageLayout({ children }: { children: React.ReactNode }) 
                 <td>We have 700 users online</td>
               </tr>
             </tbody>
+            </table>
             <img src="https://media.tenor.com/klTGLoPtC6EAAAAM/minaluvr.gif" alt="gif1" />
           </Container>
         }
         {children}
         {!isMobile &&
           <Container className={styles.sideBannerRight}>
-            <Image src="arteCorazon.png" alt="LONHP2" height={1100} />
+            <Image src="arteCorazon.png" alt="LONHP2" height={1300} />
           </Container>
         }
       </Container>

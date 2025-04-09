@@ -1,7 +1,10 @@
+'use client'
+
 import { Button } from '@mantine/core';
 import Image from 'next/image';
-
+import { useRouter } from 'next/navigation';
 export default function HomeContent() {
+  const router = useRouter();
   return (
     <>
       <Image
@@ -10,7 +13,7 @@ export default function HomeContent() {
         width={800}
         height={100}
       />
-      <Button variant="filled" color="ocean-blue" size="compact-xl">
+      <Button onClick={() => router.push('/home')} variant="filled" color="ocean-blue" size="compact-xl">
         Entrar
       </Button>
 
