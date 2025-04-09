@@ -1,7 +1,8 @@
 import PageLayout from '@/components/PageLayout/PageLayout';
 import GifSection from '@/components/GifSection/GifSection';
 import * as React from 'react';
-export default function Example() {
+import ContentSection from '@/components/ContentSection/ContentSection';
+export default function Example() { 
   return (
     <PageLayout>
       <div style={{
@@ -10,6 +11,7 @@ export default function Example() {
         flexDirection: 'column',
         alignItems: 'center',
       }}>
+        <ContentSection />
         <GifSection />
       </div>
     </PageLayout>

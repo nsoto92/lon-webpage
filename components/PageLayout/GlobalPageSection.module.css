@@ -15,3 +15,10 @@
   width: 90%;
   margin: auto;
 }
+
+.link {
+  font-weight: 700;
+  text-color: rgb(0,0,238);
+  cursor: pointer;
+  text-decoration: underline;
+}
