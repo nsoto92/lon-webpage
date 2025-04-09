@@ -1,20 +1,20 @@
 import Navbar from '../Navbar/Navbar';
-import { Image, px } from '@mantine/core';
+import { Container, Image } from '@mantine/core';
 import styles from './PageLayout.module.css';
 
 export default function PageLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className={styles.container}>
-      <div className={styles.topBanner}>
-        <Image src="/lvhpBanner.png" alt="LONHP" height={110} />
-      </div>
+    <Container fluid style={{ padding: 0 }}>
+      <Container fluid className={styles.topBanner}>
+        <Image fit="contain" src="/darkTypography4.png" alt="LONHP" h={110} />
+      </Container>
       <Navbar />
-      <div className={styles.content}>
+      <Container className={styles.content}>
         {children}
-        <div className={styles.sideBanner}>
+        <Container className={styles.sideBanner}>
          <Image src="arteCorazon.png" alt="LONHP2" height={1100}/>
-        </div>
-      </div>
-    </div>
+        </Container>
+      </Container>
+    </Container>
   )
 }

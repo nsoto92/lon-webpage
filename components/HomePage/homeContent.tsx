@@ -13,6 +13,13 @@ export default function HomeContent() {
       <Button variant="filled" color="ocean-blue" size="compact-xl">
         Entrar
       </Button>
+
+      <Image
+        src="/whiteTypography4.png"
+        alt="WTG4"
+        width={200}
+        height={125}
+      />
     </>
   )
 }

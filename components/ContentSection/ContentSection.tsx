@@ -1,12 +1,15 @@
 import Image from 'next/image';
 import glogalStyles from '../PageLayout/GlobalPageSection.module.css';
 
-export default function ContentSection() {
+interface ContentSectionProps {
+  hasAd?: boolean;
+}
+export default function ContentSection({ hasAd = false }: ContentSectionProps) {
   return (
     <div className={glogalStyles.container}>
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-        Link para descargar canciones
-      </a>
+      {hasAd && (
+        <img src="https://web.archive.org/web/20090524022903im_/http://i39.tinypic.com/30vzr4l.gif" alt="gif1" />
+      )}
       <a href="https://www.youtube.com" className={glogalStyles.link}>
         Link para descargar canciones
       </a>
