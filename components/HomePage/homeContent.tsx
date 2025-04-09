@@ -23,6 +23,24 @@ export default function HomeContent() {
         width={200}
         height={125}
       />
+      <Image
+        src="/whiteCombo4.png"
+        alt="WTG4"
+        width={200}
+        height={125}
+      />
+      <Image
+        src="/whiteTypography2.png"
+        alt="WTG4"
+        width={200}
+        height={125}
+      />
+      <Image
+        src="/whiteTypography1.png"
+        alt="WTG4"
+        width={200}
+        height={125}
+      />
     </>
   )
 }
